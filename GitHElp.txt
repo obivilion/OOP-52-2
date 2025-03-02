@@ -18,3 +18,5 @@ git commit -m "LS: urok1 added learn python oop"
 git push origin master
 Команда для просмотра ветки
 git branch
+
+
