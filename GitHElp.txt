@@ -9,5 +9,12 @@ git init
 git remote add origin https://github.com/obivilion/OOP-52-2.git
 ---------------------------------------------------------------
 Часто используемые команды
-git status
-git add .
+git status          Команда для статуса проекта и его состояния
+git add .           Команда для добовления файлов в буфер
+Команда для создания коммита или же сохранения всего что есть в буфере
+git commit -m "LS: urok1 added learn python oop"
+
+Команда для оправки коммита в репозитории
+git push origin master
+Команда для просмотра ветки
+git branch
