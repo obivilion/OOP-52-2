@@ -18,5 +18,9 @@ git commit -m "LS: urok1 added learn python oop"
 git push origin master
 Команда для просмотра ветки
 git branch
+---------------------------------------------------------------
+Команда для удаления дириктори и все что она содержит
+ls -a проверка дириктри
+git rm -r --cached .idea
 
 
