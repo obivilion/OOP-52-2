@@ -1,6 +1,7 @@
 #Декопозиция проекта . Наследования Инкапсулятсия ООП GIT
 
 #Наследования
+#Полеморфизм
 
 #Родиелский класс / базовый класс / Супер класс
 class Hero:
@@ -30,9 +31,24 @@ class Warrior(Hero):
         else:
             return print(f'{self.name} мало стомины!!')
 
+    def introduce(self):
+        return print(f'Name: {self.name} ST: {self.st}')
+
+class Mage(Hero):
+
+    def __init__(self,name, lvl, hp, mp):
+        super().__init__(name, lvl, hp)
+        self.mp = mp
+
+
 Kirito = Warrior('Kirito', 100, 1000, 10)
+Gendalf = Mage('Gendalf', 100, 750, 18)
 
 # snake_case змеиеая нотация
 Kirito.action()
 Kirito.introduce()
 Kirito.attack()
+
+Gendalf.introduce()
+Gendalf.action()
+
