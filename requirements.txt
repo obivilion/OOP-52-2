@@ -1,0 +1,3 @@
+# “HW: Did hw3
+
+https://github.com/obivilion/OOP-52-2/blob/master/HomeWorks/hw3.py
