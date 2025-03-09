@@ -50,6 +50,6 @@ Kirito.introduce()
 Kirito.attack()
 
 Gendalf.introduce()
-Gendalf.action()
+    Gendalf.action()
 
 
