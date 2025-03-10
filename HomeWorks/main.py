@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
+from logging import setLogRecordFactory
+from math import radians
 
-from random import random
+from random import randint
 
 class Hero:
 
@@ -9,38 +11,33 @@ class Hero:
         self.attack = attack
         self.protection = protection
         self.rest = rest
-        self.__random_int = random
+        self.__random_int = randint
 
 
 
     def get_random_int(self):
-        return random
+        return randint(1, 3)
 
     @abstractmethod
     def unique_attack(self):
-        return print('Attack')
+        pass
 
     @abstractmethod
     def unique_scream(self):
-        return print('OYYYY')
+        pass
 
     @abstractmethod
-    def action(self, get_random_int):
-        if get_random_int == 1:
-            self.attack = get_random_int
-        elif get_random_int == 2:
-            self.protection = get_random_int
+    def action(self):
+        pass
 
-        else:
-            return 3 == self.rest
 
 
 
 
 Sam = Hero("name", 12, 200, 2)
-Sam.get_random_int()
+# Sam.action()
 
 
-Sam.unique_attack()
-Sam.unique_scream()
-Sam.action(2)
+# Sam.unique_attack()
+# Sam.unique_scream()
+# Sam.action(2)
