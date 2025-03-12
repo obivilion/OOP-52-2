@@ -118,12 +118,13 @@ greet()
 
 # Декораторы для классов
 
-def clss_decorator(cls):
-
-    class NewClass(cls):
-
-        def new_method(self):
-            return print('New method')
-    return NewClass
-
-@
+# def clss_decorator(cls):
+#
+#     class NewClass(cls):
+#
+#         def new_method(self):
+#             return print('New method')
+#     return NewClass
+#
+# @classmethod
+# def
