@@ -1,13 +1,16 @@
+hello = 'Мой друг'.upper()
+hi = 'Привет'.upper()
 def uppercase(func):
 
+
     def wrapper():
-        print("Мой друг ")
+        print(f'{hello}')
         func()
 
     return wrapper
 
 @uppercase
 def say_hello():
-    return print("Привет!")
+    return print(f'{hi}')
 
 say_hello()
