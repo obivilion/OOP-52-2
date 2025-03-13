@@ -1,16 +1,15 @@
 def uppercase(func):
-
-    hello = 'Мой друг'.upper()
     def wrapper():
-        print(f'{hello}')
-        func()
-
+        result = func()
+        if result:
+            return result.upper()
+        return result
     return wrapper
 
-@uppercase
 
+
+@uppercase
 def say_hello():
-    hi = 'Привет'.upper()
-    return print(f'{hi}')
+    return 'Привет!!'
 
 print(say_hello())
