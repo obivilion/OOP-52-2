@@ -1,8 +1,6 @@
-hello = 'Мой друг'.upper()
-hi = 'Привет'.upper()
 def uppercase(func):
 
-
+    hello = 'Мой друг'.upper()
     def wrapper():
         print(f'{hello}')
         func()
@@ -10,7 +8,9 @@ def uppercase(func):
     return wrapper
 
 @uppercase
+
 def say_hello():
+    hi = 'Привет'.upper()
     return print(f'{hi}')
 
-say_hello()
+print(say_hello())
