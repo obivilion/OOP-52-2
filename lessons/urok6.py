@@ -64,7 +64,7 @@ def binary_search(lst, target):
 print(binary_search(list1, 6))
 
 
-#  0(n®) - Квадратичная сложность
+#  0(n²) - Квадратичная сложность
 
 def bubble_sort(lst):
     n = len(lst)
