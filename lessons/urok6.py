@@ -24,7 +24,7 @@
 # Donald_Macduck.make_sound()
 # Donald_Macduck.action()
 # Donald_Macduck.action()
-from doctest import run_docstring_examples
+
 
 
 # BIG O нотация - это способ описания сложности алгоритмов. Она показывает ,
@@ -61,7 +61,7 @@ def binary_search(lst, target):
         else:
             right = mid - 1
     return -1
-print(binary_search(list1, 6))
+# print(binary_search(list1, 6))
 
 
 #  0(n²) - Квадратичная сложность
